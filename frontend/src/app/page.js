@@ -1,11 +1,13 @@
-import Image from "next/image";
-import styles from "./globals.css";
-import Nav from "./components/Nav.js";
+import Nav from "./components/nav";
 
 export default function Home() {
   return (
     <>
       <Nav />
+
+      <div className="main">
+        <h1>Velkommen</h1>
+      </div>
     </>
   );
 }

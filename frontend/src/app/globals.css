@@ -15,4 +15,13 @@ a {
   text-decoration: none;
 }
 
+/* Nav Styling */
+
+.nav {
+  display: flex;
+  flex-direction: space-between;
+  background-color: beige;
+  padding: 1em;
+}
+
 
