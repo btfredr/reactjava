@@ -21,7 +21,7 @@ public class Employee {
         return id;
     }
 
-    public void setId(LayerInstantiationExceptionong id) {
+    public void setId(LayerInstantiationException id) {
         this.id = id;
     }
 
