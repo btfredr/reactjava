@@ -1,9 +1,9 @@
 package fredrikfordelsen.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 
 
 @Entity
@@ -21,7 +21,7 @@ public class Employee {
         return id;
     }
 
-    public void setId(LayerInstantiationException id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -29,7 +29,7 @@ public class Employee {
         return name;
     }
 
-    public String setName(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -45,7 +45,7 @@ public class Employee {
         return salary;
     }
 
-    public double setSalary(double salary) {
+    public void setSalary(double salary) {
         this.salary = salary;
     }
 }

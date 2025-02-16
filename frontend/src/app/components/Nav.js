@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-export default function Nav() {
+const Nav = () => {
     return (
         <div className="nav">
             <ul className="nav-list">
@@ -22,5 +22,7 @@ export default function Nav() {
                 </li>
             </ul>
         </div>
-    )
-}
+    );
+};
+
+export default Nav;
