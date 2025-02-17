@@ -22,6 +22,12 @@ a {
   text-decoration: none;
 }
 
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 4em;
+}
+
 /* Nav Styling */
 
 .nav {

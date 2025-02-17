@@ -1,3 +1,4 @@
+import EmployeeList from "./components/EmployeeList";
 import Nav from "./components/Nav";
 
 export default function Home() {
@@ -5,8 +6,8 @@ export default function Home() {
     <>
       <Nav />
 
-      <div className="main">
-        <h1>Velkommen</h1>
+      <div className="container">
+        <EmployeeList />
       </div>
     </>
   );
