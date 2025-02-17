@@ -6,13 +6,13 @@ const Nav = () => {
         <div className="nav">
             <ul className="nav-list">
                 <li className="nav-item">
-                    <Link href="/">Hjem</Link>
+                    <Link href="/" className="nav-link">Hjem</Link>
                 </li>
                 <li className="nav-item">
-                <Link href="/">Om Oss</Link>
+                <Link href="/" className="nav-link">Om Oss</Link>
                 </li>
                 <li className="nav-item">
-                <Link href="/">Kontakt</Link>
+                <Link href="/" className="nav-link">Kontakt</Link>
                 </li>
             </ul>
         </div>
