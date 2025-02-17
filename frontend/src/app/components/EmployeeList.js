@@ -8,7 +8,7 @@ const EmployeeList = () => {
 
     useEffect(() => {
         // Fetching employees from backend
-        axios.get("http://localhost:8081/api/employees")
+        axios.get("http://localhost:5000/api/employees")
             .then((response) => {
                 setEmployees(response.data);
             })
