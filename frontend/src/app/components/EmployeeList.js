@@ -14,9 +14,18 @@ const EmployeeList = () => {
                 console.error("There was an error while fetching employees.", error);
             });
     }, []);
-    
+
   return (
-    <div>EmployeeList</div>
+    <div className="employeeList">
+        <h1>Oversikt over ansatte</h1>
+        <ul>
+            {employees.map((employee) => (
+                <li key={employee.id}>
+                    {employee.name} - {employee.position}
+                </li>
+            ))}
+        </ul>
+    </div>
   )
 }
 
