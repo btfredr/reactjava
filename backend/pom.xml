@@ -28,17 +28,11 @@
             <version>3.4.2</version>
         </dependency>
 
+        <!-- MySQL JDBC Connector (bruke én versjon) -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.33</version> 
-        </dependency>
-
-        <!-- JDBC Connector for MySQL -->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.29</version>
+            <version>8.0.33</version>  <!-- Bruk denne versjonen -->
             <scope>runtime</scope>
         </dependency>
 
