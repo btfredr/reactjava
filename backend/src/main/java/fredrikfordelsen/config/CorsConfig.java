@@ -13,9 +13,9 @@ public class CorsConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
-        config.setAllowedOrigins(List.of("http://localhost:3000")) // Allow Next frontend on port 3000
-        config.setAllowedMethods(List.of("GET", "SET", "PUT", "DELETE")) // Which HTTP methods that are allowed
-        config.setAllowedHeaders(List.of("*")) // Allowing all headers
+        config.setAllowedOrigins(List.of("http://localhost:3000")); // Allow Next frontend on port 3000
+        config.setAllowedMethods(List.of("GET", "SET", "PUT", "DELETE")); // Which HTTP methods that are allowed
+        config.setAllowedHeaders(List.of("*")); // Allowing all headers
         config.setAllowCredentials(true); // Allowing use of cookies and authentication
 
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
