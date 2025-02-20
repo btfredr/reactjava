@@ -41,6 +41,15 @@ a {
   padding: 1em;
 }
 
+.nav-logo {
+  font-size: 2rem;              /* Økt størrelse for tydelig logo */
+  font-weight: bold;            /* Fremhevet vekt for logoen */
+  color: white;                 /* Hvitt for kontrast mot bakgrunnen */
+  font-family: 'Montserrat', sans-serif; /* Moderne font – du kan endre dette om ønskelig */
+  letter-spacing: 1px;          /* Litt ekstra spacing for en moderne look */
+}
+
+
 .nav-list {
   list-style: none;
   display: flex;
@@ -64,9 +73,35 @@ a {
   color: #FF7F50;
 }
 
-@media (max-width: 768px) {
 
+/* Ansatt table styling */
+
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
+
+.employee-table th, .employee-table td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.employee-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.employee-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.employee-table tr:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+
 
 
 
