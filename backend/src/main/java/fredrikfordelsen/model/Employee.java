@@ -51,10 +51,4 @@ public class Employee {
     public void setSalary(double salary) {
         this.salary = salary;
     }
-    
-    // Ekstra metode for å kombinere firstName og lastName
-    @Transient
-    public String getName() {
-        return firstName + " " + lastName;
-    }
 }

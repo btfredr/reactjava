@@ -25,7 +25,7 @@ const EmployeeList = () => {
       <ul>
         {employees.map((employee) => (
           <li key={employee.id}>
-            {employee.name} - {employee.position}
+            {employee.firstName} {employee.lastName} - {employee.position}
           </li>
         ))}
       </ul>
