@@ -101,6 +101,18 @@ a {
   cursor: pointer;
 }
 
+/* Hero section */
+
+.hero {
+  background: url('/frontend/assets/hero.jpg') center center / cover no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
 
 
 
