@@ -149,9 +149,28 @@ section h2 {
 }
 
 .service-item {
-
+  flex: 1 1 200px;
+  max-width: 300px;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 
+ol {
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Footer */
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+
+}
 
 
 

@@ -14,9 +14,9 @@ export default function Home() {
 
     <section id="hero" class="hero">
       <div class="hero-content">
-        <h1>Vi bygger fremtiden – Eiendom med visjon</h1>
-        <p>Med erfaring, innovasjon og samarbeid skaper vi bærekraftige eiendomsløsninger for morgendagens samfunn.</p>
-        <a href="#kontakt" class="cta-button">Få en gratis konsultasjon</a>
+        <h1>Bygg drømmen – Vi realiserer visjoner</h1>
+        <p>Med erfaring, innovasjon og engasjement skaper vi bærekraftige eiendomsløsninger som former morgendagens samfunn</p>
+        <a href="/kontakt" class="cta-button">Få en gratis konsultasjon</a>
       </div>
     </section>
 
@@ -24,7 +24,8 @@ export default function Home() {
     <section id="omoss">
       <h2>Om Oss</h2>
       <p>
-        Hos Hoff, Haugen & Fordelsen Eiendomsutvikling kombinerer vi tradisjon med innovasjon for å realisere dine visjoner. Vi leverer prosjekter med kvalitet, bærekraft og dedikasjon.
+        Hos Hoff, Haugen & Fordelsen Eiendomsutvikling kombinerer vi tradisjon med innovasjon for å realisere dine visjoner. <br />
+        Vi leverer prosjekter med kvalitet, bærekraft og dedikasjon.
       </p>
     </section>
 
