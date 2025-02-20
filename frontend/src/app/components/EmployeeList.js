@@ -22,13 +22,29 @@ const EmployeeList = () => {
   return (
     <div className="employeeList">
       <h1>Oversikt over ansatte</h1>
-      <ul>
+      <table className="employee-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Fornavn</th>
+            <th>Etternavn</th>
+            <th>Stilling</th>
+            <th>Lønn</th>
+          </tr>
+        </thead>
+
+        <tbody>
         {employees.map((employee) => (
-          <li key={employee.id}>
-            {employee.firstName} {employee.lastName} - {employee.position}
-          </li>
+          <tr key={employee.id}>
+            <td>{employee.id}</td>
+            <td>{employee.firstName}</td>
+            <td>{employee.lastName}</td>
+            <td>{employee.position}</td>
+            <td>{employee.salary.toLocaleString()} kr</td>
+          </tr>
         ))}
-      </ul>
+        </tbody>
+      </table>
     </div>
   );
 };
