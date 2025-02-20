@@ -8,9 +8,11 @@ const EmployeeList = () => {
 
   useEffect(() => {
     // Når backend er oppe, hent ansatte fra backend (bruk port 8081)
-    axios.get('http://localhost:8081/api/employees')  // Backendporten er 8081
+    axios.get('http://localhost:8081/api/employees', { withCredentials: true })  // Backendporten er 8081
       .then(response => {
         setEmployees(response.data);
+        console.log(response.data);
+        
       })
       .catch(error => {
         console.error("Det oppstod en feil med å hente ansatte.", error);

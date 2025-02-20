@@ -1,51 +1,60 @@
 package fredrikfordelsen.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-
+import jakarta.persistence.*;
 
 @Entity
+@Table(name = "employees")
 public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
     private Long id;
-    private String name;
+    
+    @Column(name = "first_name")
+    private String firstName;
+    
+    @Column(name = "last_name")
+    private String lastName;
+    
     private String position;
     private double salary;
+    
+    public Employee() {}
 
-    // Getters and setters
+    // Getters og setters for firstName og lastName
     public Long getId() {
         return id;
     }
-
     public void setId(Long id) {
         this.id = id;
     }
-
-    public String getName() {
-        return name;
+    public String getFirstName() {
+        return firstName;
     }
-
-    public void setName(String name) {
-        this.name = name;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
-
+    public String getLastName() {
+        return lastName;
+    }
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
     public String getPosition() {
         return position;
     }
-
-    public String setPosition(String position) {
-        return position;
+    public void setPosition(String position) {
+        this.position = position;
     }
-
     public double getSalary() {
         return salary;
     }
-
     public void setSalary(double salary) {
         this.salary = salary;
+    }
+    
+    // Ekstra metode for å kombinere firstName og lastName
+    @Transient
+    public String getName() {
+        return firstName + " " + lastName;
     }
 }

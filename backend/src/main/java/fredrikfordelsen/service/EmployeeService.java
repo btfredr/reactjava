@@ -4,8 +4,8 @@ import fredrikfordelsen.model.Employee;
 import fredrikfordelsen.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import java.util.Optional;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class EmployeeService {
@@ -17,27 +17,27 @@ public class EmployeeService {
         this.employeeRepository = employeeRepository;
     }
 
-    public Optional<Employee> getEmployeeById(Long id) {
-        return employeeRepository.findById(id); // Bruker findById fra JpaRepository
+    public List<Employee> getAllEmployees() {
+        return employeeRepository.findAll();
     }
 
-    public List<Employee> getAllEmployees() {
-        return employeeRepository.findAll(); // Henter alle ansatte
+    public Optional<Employee> getEmployeeById(Long id) {
+        return employeeRepository.findById(id);
     }
 
     public Employee saveEmployee(Employee employee) {
-        return employeeRepository.save(employee); // Lagre en ansatt
+        return employeeRepository.save(employee);
     }
 
     public Employee updateEmployee(Long id, Employee employee) {
         if (employeeRepository.existsById(id)) {
             employee.setId(id);
-            return employeeRepository.save(employee); // Oppdaterer eksisterende ansatt
+            return employeeRepository.save(employee);
         }
         throw new RuntimeException("Employee not found");
     }
 
     public void deleteEmployee(Long id) {
-        employeeRepository.deleteById(id); // Sletter en ansatt
+        employeeRepository.deleteById(id);
     }
 }
