@@ -5,33 +5,17 @@ import axios from 'axios';
 
 const EmployeeList = () => {
   const [employees, setEmployees] = useState([]);
-  const [backendPort, setBackendPort] = useState('');
 
   useEffect(() => {
-    // Hente porten fra backend
-    axios.get('http://localhost:5000/api/port')
+    // Når backend er oppe, hent ansatte fra backend (bruk port 8081)
+    axios.get('http://localhost:8081/api/employees')  // Backendporten er 8081
       .then(response => {
-        setBackendPort(response.data);  // Setter den dynamiske porten
-        console.log(response);
-        
+        setEmployees(response.data);
       })
       .catch(error => {
-        console.error("There was an error fetching the backend port.", error);
+        console.error("Det oppstod en feil med å hente ansatte.", error);
       });
   }, []);
-
-  useEffect(() => {
-    if (backendPort) {
-      // Når porten er tilgjengelig, hent ansatte fra backend
-      axios.get(`http://localhost:${backendPort}/api/employees`)
-        .then(response => {
-          setEmployees(response.data);
-        })
-        .catch(error => {
-          console.error("There was an error while fetching employees.", error);
-        });
-    }
-  }, [backendPort]);
 
   return (
     <div className="employeeList">
