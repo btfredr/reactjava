@@ -141,6 +141,12 @@ a {
   margin-top: 1rem;
 }
 
+.hero-title {
+  margin: 15px;
+  font-size: 30px;
+  letter-spacing: 4px;
+}
+
 /* Sections */
 
 section {

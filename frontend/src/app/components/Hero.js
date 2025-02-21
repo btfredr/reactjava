@@ -14,7 +14,7 @@ const Hero = () => {
                 priority 
                 />
             <div className="hero-content">
-                <h1>Velkommen til HFF Eiendom</h1>
+                <h1 className="hero-title">Velkommen til HFF Eiendom</h1>
                 <p>Vi skaper fremtidens boliger og næringsbygg</p>
                 <Link href="/prosjekter" className="cta-button">Se våre prosjekter</Link>
             </div>
