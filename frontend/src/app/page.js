@@ -1,4 +1,5 @@
 import EmployeeList from "./components/EmployeeList";
+import Hero from "./components/Hero";
 import Nav from "./components/Nav";
 
 export const metadata = { title: "HHF Eiendomsutvikling" }
@@ -11,7 +12,7 @@ export default function Home() {
       <html>
         <body>
 
-
+    <Hero />
     <section id="omoss">
       <h2>Om Oss</h2>
       <p>
