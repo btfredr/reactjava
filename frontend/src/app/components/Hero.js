@@ -1,15 +1,24 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Hero = () => {
-  return (
-    <section id="hero" class="hero">
-    <div class="hero-content">
-      <h1>Bygg drømmen – Vi realiserer visjoner</h1>
-      <p>Med erfaring, innovasjon og engasjement skaper vi bærekraftige eiendomsløsninger som former morgendagens samfunn</p>
-      <a href="/kontakt" class="cta-button">Få en gratis konsultasjon</a>
-    </div>
-  </section>
+    return (
+        <section className="hero">
+            <div className="hero-overlay"></div>
+            <Image 
+                src="/hero.jpg" 
+                alt="Eiendomsutvikling" 
+                layout="fill" 
+                objectFit="cover" 
+                priority 
+                />
+            <div className="hero-content">
+                <h1>Velkommen til HFF Eiendom</h1>
+                <p>Vi skaper fremtidens boliger og næringsbygg</p>
+                <Link href="/prosjekter" className="cta-button">Se våre prosjekter</Link>
+            </div>
+        </section>
   )
 }
 
