@@ -12,15 +12,6 @@ export default function Home() {
         <body>
 
 
-    <section id="hero" class="hero">
-      <div class="hero-content">
-        <h1>Bygg drømmen – Vi realiserer visjoner</h1>
-        <p>Med erfaring, innovasjon og engasjement skaper vi bærekraftige eiendomsløsninger som former morgendagens samfunn</p>
-        <a href="/kontakt" class="cta-button">Få en gratis konsultasjon</a>
-      </div>
-    </section>
-
-
     <section id="omoss">
       <h2>Om Oss</h2>
       <p>
