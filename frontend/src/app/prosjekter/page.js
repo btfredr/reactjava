@@ -4,6 +4,7 @@ import React, {useState, useEffect} from 'react'
 import Nav from '../components/Nav'
 import axios from 'axios';
 import Link from 'next/link';
+import Image from 'next/image'
 
 
 const Projects = () => {
@@ -29,7 +30,7 @@ const Projects = () => {
       <h1 className="project-title">Våre Prosjekter</h1>
       <div className="project-grid">
         {projects.map((project) => (
-          <Link key={project.id} href={`/projects/${project.id}`} className="card">
+          <div key={project.id} className="card">
             <Image
               src={project.image}
               alt={project.title}
@@ -42,7 +43,7 @@ const Projects = () => {
               <p>{project.location}</p>
               <p>{project.description}</p>
             </div>
-          </Link>
+          </div>
         ))}
       </div>
       </div>
