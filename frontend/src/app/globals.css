@@ -207,9 +207,9 @@ footer {
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-full, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-}
+} 
 
 .card {
   background: white;
@@ -222,7 +222,6 @@ footer {
 }
 
 .card:hover {
-  padding: 15px;
 }
 
 .project-image {
