@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/api/projekter")
+@RequestMapping("/api/projects")
 public class ProjectController {
 
     private final ProjectService ProjectService;

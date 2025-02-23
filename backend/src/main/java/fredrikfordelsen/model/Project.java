@@ -12,6 +12,7 @@ public class Project {
     private String title;
     private String location;
     private String description;
+    private String image;
     
     public Project() {}
 
@@ -39,5 +40,11 @@ public class Project {
     }
     public void setLocation(String location) {
         this.location = location;
+    }
+    public String getImage() {
+        return location;
+    }
+    public void setImage(String image) {
+        this.image = image;
     }
 }

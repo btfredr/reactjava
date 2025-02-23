@@ -3,6 +3,7 @@
 import React, {useState, useEffect} from 'react'
 import Nav from '../components/Nav'
 import axios from 'axios';
+import Link from 'next/link';
 
 
 const Projects = () => {
