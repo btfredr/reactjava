@@ -43,6 +43,9 @@ const Projects = () => {
               <p>{project.location}</p>
               <p>{project.description}</p>
             </div>
+            <Link href={`/prosjekter/${project.id}`}>
+                  <button className="read-more-btn">Les mer</button>
+            </Link>
           </div>
         ))}
       </div>
