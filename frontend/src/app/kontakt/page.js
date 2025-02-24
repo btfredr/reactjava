@@ -54,7 +54,47 @@ const Contact = () => {
         <Nav />
 
         <div className="container">
+            <div className="contact-container">
+                <h2>Kontakt oss</h2>
+                <p>Har du spørsmål? Send oss en melding, så svarer vi så snart vi kan!</p>
 
+                {status && <p className="status-message">{status}</p>}
+
+                <form onSubmit={handleSubmit}>
+
+                    <label htmlFor="name">Navn:</label>
+                    <input 
+                        type="text"
+                        id="name"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleChange}
+                        required
+                    />
+
+                    <label htmlFor="email">E-post:</label>
+                    <input 
+                        type="text"
+                        id="email"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                        required
+                    />
+
+                    <label htmlFor="message">Melding:</label>
+                    <textarea 
+                        type="text"
+                        id="message"
+                        name="message"
+                        value={formData.message}
+                        onChange={handleChange}
+                        required
+                    ></textarea>
+
+                    
+                </form>
+            </div>
         </div>
     </>
   )
