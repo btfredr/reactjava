@@ -18,7 +18,14 @@ const Contact = () => {
     // Handling change in input fields
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value});
-    }
+    };
+
+    // Function to prevent page reload when submitting form
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+    };
+
+    
   return (
     <>
         <Nav />
