@@ -55,7 +55,7 @@ const Contact = () => {
 
         <div className="container">
             <div className="contact-container">
-                <h2>Kontakt oss</h2>
+                <h1>Kontakt oss</h1>
                 <p>Har du spørsmål? Send oss en melding, så svarer vi så snart vi kan!</p>
 
                 {status && <p className="status-message">{status}</p>}

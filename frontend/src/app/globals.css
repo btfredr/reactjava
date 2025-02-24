@@ -244,4 +244,50 @@ footer {
   color: #555;
 }
 
+/* Contact form */
+
+.contact-container {
+  width: 100%;
+}
+
+.contact-container h1 {
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.contact-container p {
+  letter-spacing: 1.5px;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  letter-spacing: 1.5px;
+}
+
+input {
+  padding: 10px;
+}
+
+
+textarea {
+  width: 100%;
+  resize: vertical; /* Kun tillate vertikal resizing */
+  padding: 10px;
+  height: 150px;
+}
+
+.status-message {
+  text-align: center;
+  font-weight: bold;
+  color: green;
+}
+
 
