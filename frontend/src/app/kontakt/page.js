@@ -92,7 +92,7 @@ const Contact = () => {
                         required
                     ></textarea>
 
-                    
+                    <button type="submit">Send</button>
                 </form>
             </div>
         </div>

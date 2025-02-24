@@ -290,4 +290,21 @@ textarea {
   color: green;
 }
 
+button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #003366;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+button:hover {
+  background-color: #002244;
+}
+
+
 

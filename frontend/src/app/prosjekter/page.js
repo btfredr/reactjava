@@ -42,10 +42,11 @@ const Projects = () => {
               <h2>{project.title}</h2>
               <p>{project.location}</p>
               <p>{project.description}</p>
-            </div>
-            <Link href={`/prosjekter/${project.id}`}>
+              <Link href={`/prosjekter/${project.id}`}>
                   <button className="read-more-btn">Les mer</button>
             </Link>
+            </div>
+
           </div>
         ))}
       </div>
