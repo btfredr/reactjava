@@ -1,6 +1,6 @@
 "use client"
 
-import React from 'react'
+import React, {useState} from 'react'
 import Nav from '../components/Nav'
 import axios from 'axios';
 
@@ -26,6 +26,29 @@ const Contact = () => {
     };
 
     
+/*
+    try {
+        // Sending a POST request to the API with the user's message
+        await axios.post("http://localhost:8081/api/messages", formData, {
+        headers: {"Content-Type": "application/json"},
+        });
+        
+        // Showing success message to user
+        setStatus("Meldingen ble sendt!");
+
+        // Emptying the form after successful sending
+        setFormData({name: "", email: "", message: "" });
+    } catch (error) {
+        // Showing error message if something goes wrong
+        setStatus("Noe gikk galt, prøv igjen.");
+    }
+}
+*/
+
+
+
+
+
   return (
     <>
         <Nav />
