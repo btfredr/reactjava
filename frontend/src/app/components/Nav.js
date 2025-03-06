@@ -4,10 +4,12 @@ import Link from 'next/link';
 const Nav = () => {
     return (
         <div className="nav">
-            <div className="nav-logo">HHF Eiendom</div>
+            <div className="nav-logo">
+            <Link href="/"> HHF Eiendom</Link>
+            </div>
             <ul className="nav-list">
                 <li className="nav-item">
-                    <Link href="/" className="nav-link">Hjem</Link>
+                    
                 </li>
                 <li className="nav-item">
                 <Link href="/omoss" className="nav-link">Om Oss</Link>

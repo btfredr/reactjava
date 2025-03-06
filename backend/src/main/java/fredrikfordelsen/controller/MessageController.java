@@ -15,13 +15,13 @@ public class MessageController {
     @Autowired
     private MessageRepository messageRepository;
 
-    // 📌 Lagre en ny melding
+    // Lagre en ny melding
     @PostMapping
     public Message saveMessage(@RequestBody Message message) {
         return messageRepository.save(message); // Lagrer meldingen i databasen
     }
 
-    // 📌 Hent alle meldinger (f.eks. for admin)
+    // Hent alle meldinger (f.eks. for admin)
     @GetMapping
     public List<Message> getMessages() {
         return messageRepository.findAll();
